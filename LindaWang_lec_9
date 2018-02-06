@@ -7,3 +7,12 @@ def main():
     y = number_items(a,b)
     print y
     
+from operator import *
+def eq_elts(x,y):
+    return list(map(eq,x,y))
+
+x = [1,2,3]
+y = [3,2,1]
+z = eq_elts(x,y)
+z
+
