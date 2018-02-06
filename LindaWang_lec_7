@@ -1,0 +1,17 @@
+def increase2(L):
+    return L[0] < L[1]
+    
+def increasing_lists(L):
+    print filter(increase2,L)
+
+def main():
+    print '---Boolean function to test if the first two elements of a list are in increasing order - list is [2,5,4,9]---\n'
+    print increase2([2,5,4,9])
+    
+    print '---Boolean function to test if the first two elements of a list are in increasing order - list is [2,2,5,0]---\n'
+    print increase2([2,2,5,0])
+
+    print '\n---Results for increasing lists---\n'
+    print increasing_lists([[2,5,4,9],[2,2],[3,4,5]])
+    
+    print '\n End \n'

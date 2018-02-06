@@ -1,0 +1,9 @@
+def number_items(a,b):
+    return zip(a,b) 
+
+def main():
+    a = range(1,4)
+    b = ['a','b',7]
+    y = number_items(a,b)
+    print y
+    

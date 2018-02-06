@@ -1,0 +1,13 @@
+''' need to rewrite the code when the length of the second is 2 rather than 3 by loop.
+def sum_each(L):
+     return L[0]+L[1]+L[2]
+
+def main():
+    y = map(sum_each,[[1,2,3],[4,5,7],[6,7,8]])
+    print y
+def double_each(L):
+    return [2*L[0],2*L[1],2*L[2]]
+
+def main():
+    y = map(double_each,[[1,2,3],[4,5,6],[7,8,9]])
+    print y
