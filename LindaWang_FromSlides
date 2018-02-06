@@ -96,3 +96,12 @@ print zip(a,b,c)
 
 print map(lambda t: t[0]+t[1]+t[2], zip(a,b,c))
 print map(lambda x, y, z: x+y+z,a,b,c)
+
+'''----page 67'''
+def firstelt(L):
+    if L ==[]:
+        return None
+    else:
+        return L[0]
+
+firstelt([3])
