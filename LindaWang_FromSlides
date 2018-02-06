@@ -105,3 +105,5 @@ def firstelt(L):
         return L[0]
 
 firstelt([3])
+
+page 69
