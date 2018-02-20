@@ -7,3 +7,15 @@ f.close()
 
 text = '_'.join(map(lambda s:s.upper(),lines))
 print text
+
+
+f = open("C:\working\simple.txt", "r")
+lines = f.readlines()
+print lines
+f.close()
+
+text = map(lambda s:s.upper(),lines)
+print text
+
+newtext = map(lambda s:s.strip(),text)
+print newtext
