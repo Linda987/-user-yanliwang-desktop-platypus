@@ -19,3 +19,14 @@ print text
 
 newtext = map(lambda s:s.strip(),text)
 print newtext
+
+def e_to_a(name):
+    f = open(name, 'r')
+    lines = f.readlines()
+    print lines
+    lines = map(lambda s:s.strip().replace('e','a'),lines)
+    f.close()
+    return lines
+    
+newlines = e_to_a("C:\working\simple.txt")
+print newlines
