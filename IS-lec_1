@@ -9,3 +9,9 @@ def find_char(s,t):
 s = 'today is a nice day'
 
 print find_char(s,'i')
+
+has_no = lambda s: s.find('No') != -1
+
+L = ['No rain', 'Some snow', 'No sleet']
+
+print filter(has_no, L)
