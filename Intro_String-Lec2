@@ -1,0 +1,9 @@
+'''Intro - String -lec_2 '''
+
+f = open("C:\working\simple.txt", "r")
+lines = f.readlines()
+print lines
+f.close()
+
+text = '_'.join(map(lambda s:s.upper(),lines))
+print text
