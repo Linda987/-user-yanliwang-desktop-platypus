@@ -1,0 +1,14 @@
+def grep(word, file):
+    f = open(file, 'r')
+    lines = f.readlines()
+    f.close
+    print lines
+    has_word = lambda line: line.find(word) != -1
+    
+    output = filter(has_word, lines)
+    
+    print output
+    return "\n--".join(output)
+    
+
+print grep('people','C:\Working\PythonStudy\oldmanandthesea.txt')
