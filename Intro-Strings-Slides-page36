@@ -24,3 +24,23 @@ def grep2(word1, word2, file):
 
 grep2('line','This','/Users/yanliwang/Documents/20180121-MacBook/_0001_DataScience/Intro/04-StringsIODS/myfile.txt')
 
+Exercise 5: Non-mutating operations
+❖ Try this using list and string operations you have learned:
+➢ Assign a list or string to a variable (say, L or s).
+➢ Perform operations on the variable.
+➢ Note that the variable changes only if you re-assign to it.
+➢ Now assign the variable to another variable:
+➢ Now perform operations on L and s and assign the result to L or s,
+e.g. “L = L[2:]” or “s = s.upper()”. Do M or t change?
+L='string for L'
+print (L)
+s="string for S"
+print (s)
+print (L[2])
+print (s[3])
+M=L
+t=s
+L=L[2:]
+print (L)
+s=s.upper()
+print (s)
