@@ -12,3 +12,15 @@ def grep(word, file):
     
 
 print grep('people','C:\Working\PythonStudy\oldmanandthesea.txt')
+
+----page 37 excercie 4
+
+def grep2(word1, word2, file):
+    f = open(file, 'r')
+    lines = f.readlines()
+    outputlines = filter(lambda line: line.find(word1) != -1\
+    and line.find(word2) != -1, lines)
+    return "".join(outputlines)
+
+grep2('line','This','/Users/yanliwang/Documents/20180121-MacBook/_0001_DataScience/Intro/04-StringsIODS/myfile.txt')
+
